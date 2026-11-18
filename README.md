@@ -53,6 +53,11 @@ Your task is to containerize this existing application using Docker. You need to
 ## Reflection Question
 **Answer the following question in the space below**: How does containerization with Docker differ from using virtual machines, and why might a development team choose Docker containers over VMs for deploying applications like the one you just containerized?
 
+-  Docker containers and virtual machines both allow applications to run in separate environments, but they work differently. Virtual machines run their own operating systems, while Docker containers share the host operating system's kernel and package only the application and the dependencies it needs.
+A development team might choose Docker because containers are generally lighter, faster to start, and use fewer resources than virtual machines. They also make it easier to move applications between different environments without worrying as much about missing dependencies or differences between computers.
+For example, with this assignment, I was able to run a Node.js application using Docker without having to install Node.js directly on my Mac. This makes it easier for developers to work on the same application and helps ensure it runs consistently across development and deployment environments. 
+
+
 
 
 ## Application Requirements for Docker
@@ -92,3 +97,16 @@ docker-assignment/
 ```
 
 Good luck with your Docker containerization!
+
+
+# ------------------------------
+## command
+# docker build -t docker-nodejs-app .
+
+## Application Screenshots
+
+### Main Application
+![Application Running](screenshots/app-running.png)
+
+### API Status Response
+![API Status](screenshots/api-status.png)
